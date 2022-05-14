@@ -1,9 +1,11 @@
 <div align="center">
-<h1>jest-expect-message</h1>
+<h1>jest-27-expect-message</h1>
 
 🃏🗯
 
-Add custom message to Jest expects
+Add custom message to Jest expects (with support for Jest 27+). This is a drop in replacement for `jest-expect-message`.
+
+If `jest-expect-message` is updated to support Jest 27+, this package will be marked as deprecated.
 </div>
 
 <hr />
@@ -38,7 +40,7 @@ Expect takes at most one argument.
 
 ## Solution
 
-`jest-expect-message` allows you to call `expect` with a second argument of a `String` message.
+`jest-27-expect-message` allows you to call `expect` with a second argument of a `String` message.
 
 For example the same test as above:
 
@@ -48,7 +50,7 @@ test('returns 2 when adding 1 and 1', () => {
 });
 ```
 
-With `jest-expect-message` this will fail with your custom error message:
+With `jest-27-expect-message` this will fail with your custom error message:
 
 ```sh
   ● returns 2 when adding 1 and 1
@@ -66,24 +68,24 @@ With `jest-expect-message` this will fail with your custom error message:
 
 With npm:
 ```sh
-npm install --save-dev jest-expect-message
+npm install --save-dev jest-27-expect-message
 ```
 
 With yarn:
 ```sh
-yarn add -D jest-expect-message
+yarn add -D jest-27-expect-message
 ```
 
 ## Setup
 
-Add `jest-expect-message` to your Jest `setupFilesAfterEnv` configuration.
+Add `jest-27-expect-message` to your Jest `setupFilesAfterEnv` configuration.
 [See for help](https://jestjs.io/docs/en/next/configuration#setupfilesafterenv-array)
 
 ### Jest v24+
 
 ```json
 "jest": {
-  "setupFilesAfterEnv": ["jest-expect-message"]
+  "setupFilesAfterEnv": ["jest-27-expect-message"]
 }
 ```
 
@@ -91,7 +93,7 @@ Add `jest-expect-message` to your Jest `setupFilesAfterEnv` configuration.
 
 ```json
 "jest": {
-  "setupTestFrameworkScriptFile": "jest-expect-message"
+  "setupTestFrameworkScriptFile": "jest-27-expect-message"
 }
 ```
 

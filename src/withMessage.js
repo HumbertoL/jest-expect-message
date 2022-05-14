@@ -1,6 +1,8 @@
+const getMessage = message => (typeof message === 'function' ? message() : message);
+
 class JestAssertionError extends Error {
   constructor(result, callsite) {
-    super(result.message());
+    super(getMessage(result.message));
     this.matcherResult = result;
 
     if (Error.captureStackTrace) {
@@ -23,7 +25,9 @@ const wrapMatcher = (matcher, customMessage) => {
         throw new JestAssertionError(matcherResult, newMatcher);
       }
 
-      const message = () => 'Custom message:\n  ' + customMessage + '\n\n' + matcherResult.message();
+      const matcherMessage = getMessage(error.matcherResult.message);
+
+      const message = () => 'Custom message:\n  ' + customMessage + '\n\n' + matcherMessage;
 
       throw new JestAssertionError({ ...matcherResult, message }, newMatcher);
     }
