@@ -1,6 +1,6 @@
 {
   "name": "jest-27-expect-message",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Add custom message to Jest expects",
   "main": "dist/index.js",
   "scripts": {
@@ -28,12 +28,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattphillips/jest-expect-message.git"
+    "url": "git+https://github.com/HumbertoL/jest-expect-message.git"
   },
   "bugs": {
-    "url": "https://github.com/mattphillips/jest-expect-message/issues"
+    "url": "https://github.com/HumbertoL/jest-expect-message/issues"
   },
-  "homepage": "https://github.com/mattphillips/jest-expect-message#readme",
+  "homepage": "https://github.com/HumbertoL/jest-expect-message#readme",
   "devDependencies": {
     "all-contributors-cli": "^5.4.0",
     "babel-cli": "^6.26.0",
