@@ -10,6 +10,8 @@ The original `jest-expect-message` will throw this error when used in newer vers
 "TypeError: matcherResult.message is not a function"
 ```
 
+Version 1.0.4 is fully compatible with `jest-expect-message`. Starting in version 1.1.0, I'll start including new features and improvement.s
+
 If `jest-expect-message` is updated to support Jest 27+, this package will be marked as deprecated.
 </div>
 
