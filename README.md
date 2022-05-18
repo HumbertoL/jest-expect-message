@@ -5,6 +5,11 @@
 
 Add custom message to Jest expects (with support for Jest 27+). This is a drop in replacement for `jest-expect-message`.
 
+The original `jest-expect-message` will throw this error when used in newer versions of Jest:
+```
+"TypeError: matcherResult.message is not a function"
+```
+
 If `jest-expect-message` is updated to support Jest 27+, this package will be marked as deprecated.
 </div>
 
